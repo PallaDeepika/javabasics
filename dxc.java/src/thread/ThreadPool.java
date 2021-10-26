@@ -8,7 +8,7 @@ public class ThreadPool {
 		ExecutorService executorService = Executors.newFixedThreadPool(5);
 
 		for(int i=0; i<10; i++) {
-			Runnable worker = new workerThread("job no "+i);
+			Runnable worker =  new WorkerThread("job no "+i);
 			executorService.execute(worker);
 		}
 
