@@ -1,0 +1,20 @@
+package generics;
+
+public class DemoGenericMethods {
+	
+	public static <E> void printArray(E[] elements) {
+		for(E element: elements) {
+			System.out.println();
+			}
+		System.out.println();
+	}
+	public static void main(String[] args) {
+		Integer[] intArray= {10,20,30,40};
+		Character[] charArray= {'a','b','c','d'};
+		printArray(intArray);
+		printArray(charArray);
+		
+		
+	}
+
+}
